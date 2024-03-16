@@ -1,18 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const GreetingFunctionalComponent = (props) => {
+  //Breve introducción a useState
+  //const [variable, método para actualizarlo] = useState(valor inicial)
 
-    //Breve introducción a useState
-    //const [variable, método para actualizarlo] = useState(valor inicial)
+  const [age, setage] = useState(29);
 
-    const [age, setage] = useState(29);
-
-    const birthday = () => {
-        //actualizamos el state
-        setage(age + 1)
-    }
-
+  const birthday = () => {
+    //actualizamos el state
+    setage(age + 1);
+  };
 
   return (
     <div>
@@ -26,7 +24,7 @@ const GreetingFunctionalComponent = (props) => {
 };
 
 GreetingFunctionalComponent.propTypes = {
-    name: PropTypes.string
+  name: PropTypes.string,
 };
 
 export default GreetingFunctionalComponent;
