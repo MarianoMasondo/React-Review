@@ -12,7 +12,6 @@ function App() {
         {/* <Greeting name="Mariano"></Greeting> */}
         {/*Componente de ejemplo funcional*/}
         {/*<GreetingFunctionalComponent name="Mariano"></GreetingFunctionalComponent>*/}
-        
         {/*Componente de listado de tareas*/}
         <TaskListComponent></TaskListComponent>
       </header>
