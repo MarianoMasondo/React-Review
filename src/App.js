@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 // import GreetingFunctionalComponent from './components/pure/greetingFunctional Component';
 import TaskListComponent from "./components/container/task_list";
+import Ejemplo1 from "./hooks/Ejemplo1";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         {/*Componente de ejemplo funcional*/}
         {/*<GreetingFunctionalComponent name="Mariano"></GreetingFunctionalComponent>*/}
         {/*Componente de listado de tareas*/}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
+        {/*Ejemplo de susu de hooks*/}
+        <Ejemplo1></Ejemplo1>
       </header>
     </div>
   );
