@@ -35,6 +35,7 @@ const Ejemplo1 = () => {
     return (
         <div>
             <h1>*** Ejemplo de useState() ***</h1>
+            
             <h2>Contador: {contador}</h2>
             <h2>Datos de la Persona:</h2>
             <h3>Nombre: {persona.nombre}</h3>
