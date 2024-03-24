@@ -29,6 +29,7 @@ const Ejemplo1 = () => {
             {
                 nombre:"Pepe",
                 email: "pepe@email.com"
+                
             }
         )        
     }
