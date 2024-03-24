@@ -28,8 +28,7 @@ const Ejemplo1 = () => {
         setPersona(
             {
                 nombre:"Pepe",
-                email: "pepe@email.com"
-                
+                email: "pepe@email.com"                
             }
         )        
     }
