@@ -3,6 +3,7 @@ import "./App.css";
 // import GreetingFunctionalComponent from './components/pure/greetingFunctional Component';
 import TaskListComponent from "./components/container/task_list";
 import Ejemplo1 from "./hooks/Ejemplo1";
+import Ejemplo2 from "./hooks/Ejemplo2";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         {/*Componente de listado de tareas*/}
         {/* <TaskListComponent></TaskListComponent> */}
         {/*Ejemplo de susu de hooks*/}
-        <Ejemplo1></Ejemplo1>
+        {/* <Ejemplo1></Ejemplo1> */}
+        <Ejemplo2></Ejemplo2>
       </header>
     </div>
   );
