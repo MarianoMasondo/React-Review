@@ -55,8 +55,8 @@ class lifeCicleExample extends Component {
     }
 }
 
-componentName.propTypes = {
+lifeCicleExample.propTypes = {
 
 }
 
-export default componentName
+export default lifeCicleExample
