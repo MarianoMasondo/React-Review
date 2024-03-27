@@ -17,7 +17,7 @@ export class WillUnmount extends Component {
     }
 }
 
-export const WillUnmount = () => {
+export const WillUnmountHook = () => {
     useEffect(()=> {
         //aqui no poenmos nada
         return() => {
