@@ -17,17 +17,17 @@ function App() {
         {/*Componente de ejemplo funcional*/}
         {/*<GreetingFunctionalComponent name="Mariano"></GreetingFunctionalComponent>*/}
         {/*Componente de listado de tareas*/}
-        {/* <TaskListComponent></TaskListComponent> */}
+        <TaskListComponent></TaskListComponent>
         {/*Ejemplo de susu de hooks*/}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
-        <Ejemplo4 nombre="Martín">
         {/* Todo lo que hay aquí dentro es tratado como props.children */}
+        {/* <Ejemplo4 nombre="Martín">
           <h3>
             Contenido de props.children
           </h3>
-        </Ejemplo4>
+        </Ejemplo4> */}
       </header>
     </div>
   );
