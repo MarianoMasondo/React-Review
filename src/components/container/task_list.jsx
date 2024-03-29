@@ -33,11 +33,32 @@ const TaskListComponent = () => {
   };
   return (
     <div>
-      <div>
-        <h1>Your Tasks:</h1>
+      <div className="col-12">
+      <div className="card">
+        {/* Card Header (title) */}
+        <h5>Your Tasks:</h5>
+      </div>
+        {/* Card Body(content) */}
+        <div className="card-body" data-mdb-perfect-scrollbar="true" style={{position: "relative", height:"400px"}}>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Priority</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* TODO: Iterar sobre una lista de tareas */}
+            <TaskComponent task={defaultTask}></TaskComponent>
+          </tbody>
+        </table>
+
+        </div>
       </div>
       {/*TODO: Aplicar un map/for para renderizar una lista*/}
-      <TaskComponent task={defaultTask}></TaskComponent>
+      {/* <TaskComponent task={defaultTask}></TaskComponent> */}
     </div>
   );
 };
