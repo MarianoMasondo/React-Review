@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Task } from "../../models/task.class";
 
+
 //Importamos la hoja de estilo de task.scss
 import '../../styles/task.scss'
 
