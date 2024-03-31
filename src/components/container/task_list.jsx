@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { LEVELS } from "../../models/levels.enum";
 import TaskComponent from "../pure/task";
 import { Task } from "../../models/task.class";
-
 //Importammos la hoja de estilos de task.scss
 import '../../styles/task.scss'
 
