@@ -7,15 +7,12 @@ import '../../styles/task.scss'
 
 const TaskListComponent = () => {  
   
-  const defaultTask = new Task(
-    "Example",
-    "Default description",
-    true,
-    LEVELS.NORMAL
-    );
+  const defaultTask1 = new Task("Example1", "Description1", true, LEVELS.NORMAL);
+  const defaultTask2 = new Task("Example2", "Description2", true, LEVELS.URGENT);
+  const defaultTask3 = new Task("Example3", "Description3", true, LEVELS.BLOCKING);
     
     // Estado del componente
-  const [tasks, setTasks] = useState([defaultTask]);
+  const [tasks, setTasks] = useState([defaultTask1, defaultTask2, defaultTask3]);
   const [loading, setLoading] = useState(true);
 
   // Control del ciclo de vida del componmente
@@ -49,8 +46,12 @@ const TaskListComponent = () => {
             </tr>
           </thead>
           <tbody>
-            {/* TODO: Iterar sobre una lista de tareas */}
-            <TaskComponent task={defaultTask}></TaskComponent>
+            {tasks.map((task, index) => {
+              return (
+                <TaskComponent key={index} task={task}></TaskComponent>
+              )
+            })}
+            
           </tbody>
         </table>
 
