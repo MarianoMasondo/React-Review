@@ -4,6 +4,7 @@ import TaskComponent from "../pure/task";
 import { Task } from "../../models/task.class";
 //Importammos la hoja de estilos de task.scss
 import '../../styles/task.scss'
+import TaskForm from "../pure/forms/taskForm";
 
 const TaskListComponent = () => {  
   
@@ -54,11 +55,9 @@ const TaskListComponent = () => {
             
           </tbody>
         </table>
-
         </div>
+        <TaskForm></TaskForm>
       </div>
-      {/*TODO: Aplicar un map/for para renderizar una lista*/}
-      {/* <TaskComponent task={defaultTask}></TaskComponent> */}
     </div>
   );
 };
