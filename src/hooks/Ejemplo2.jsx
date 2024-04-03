@@ -3,6 +3,7 @@ import React, {useState, useRef, useEffect} from 'react';
 const Ejemplo2 = () => {
     //vamos a crear 2 contadores distintos
     //cada uno enun estado diferente
+    
     const [contador1, setcontador1] = useState(0);
     const [contador2, setcontador2] = useState(0);
 

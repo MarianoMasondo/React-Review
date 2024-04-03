@@ -6,7 +6,7 @@ const Ejemplo1 = () => {
 
     //valor inicial para un contador
     const valorInicial = 0;
-    
+
     //valor inicial para una persona
     const personaInicial = {
         nombre: "Martín",
@@ -14,6 +14,8 @@ const Ejemplo1 = () => {
     }
 
     //Queremos que el VALOR INICIAL y PERSONA INICIAL sean parte del estado del componente para así poder gestionar su cabio y que este se vea reflejado en la vista del componente. Estructura: const[nombreVariable, funcionParaCAmbiar] = useState(valorInicial)
+
+    
 
     const [contador, setContador] = useState(valorInicial);
     const [persona, setPersona] = useState(personaInicial);
