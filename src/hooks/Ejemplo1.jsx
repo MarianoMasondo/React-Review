@@ -6,6 +6,7 @@ const Ejemplo1 = () => {
 
     //valor inicial para un contador
     const valorInicial = 0;
+    
     //valor inicial para una persona
     const personaInicial = {
         nombre: "Martín",
