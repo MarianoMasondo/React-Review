@@ -24,9 +24,7 @@ const Componente1 = () => {
 }
 
 const Componente2 = () => {
-
     const state = useContext(miContexto)
-
     return (
         <div>
         <h2>
