@@ -80,7 +80,7 @@ const TaskListComponent = () => {
         </table>
         </div>
       </div>
-        <TaskForm></TaskForm>
+        <TaskForm add={addTask}></TaskForm>
     </div>
   );
 };

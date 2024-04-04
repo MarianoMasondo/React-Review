@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { LEVELS } from '../../../models/levels.enum';
 import { Task } from '../../../models/task.class';
 
-const TaskForm = (add) => {
+const TaskForm = ({add}) => {
 
     const nameRef = useRef('');
     const descriptionRef = useRef('');
@@ -23,8 +23,8 @@ const TaskForm = (add) => {
     return (
         <form onSubmit={addTask} className='d-flex justify-content-center align-items-center mb-4'>
         <div className='form-outline flex-fill'>
-        <input ref={nameRef} id='inputName' type='text' className='form-control-lg' required autoFocus />
-        <input ref={descriptionRef} id='inputDescription' type='text' className='form-control-lg' required autoFocus />
+        <input ref={nameRef} id='inputName' type='text' className='form-control-lg' required autoFocus placeholder='Task Name'/>
+        <input ref={descriptionRef} id='inputDescription' type='text' className='form-control-lg' required placeholder='Task Description' />
         <label htmlFor='selectLevel' className='sr-only'>Priority</label>
         <select ref={levelRef} defaultValue={LEVELS.NORMAL} id='selectLevel'>
         <option value={LEVELS.NORMAL}>
