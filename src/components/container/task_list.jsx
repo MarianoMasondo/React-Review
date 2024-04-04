@@ -34,6 +34,14 @@ const TaskListComponent = () => {
     setTasks(tempTasks);
   }
 
+  function deleteTask(task){
+    console.log('Delete this task:', task)
+    const index = tasks.indexOf(task);
+    const tempTasks = [...tasks];
+    tempTasks.splice(index, 1);
+    setTasks(tempTasks);
+  }
+
   return (
     <div>
       <div className="col-12">
@@ -55,7 +63,7 @@ const TaskListComponent = () => {
           <tbody>
             {tasks.map((task, index) => {
               return (
-                <TaskComponent key={index} task={task} complete={completeTask}></TaskComponent>
+                <TaskComponent key={index} task={task} complete={completeTask} remove={deleteTask}></TaskComponent>
               )
             })}
             
