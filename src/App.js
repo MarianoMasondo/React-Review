@@ -1,13 +1,13 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 // import GreetingFunctionalComponent from './components/pure/greetingFunctional Component';
 import TaskListComponent from "./components/container/task_list";
-import Ejemplo1 from "./hooks/Ejemplo1";
-import Ejemplo2 from "./hooks/Ejemplo2";
-import MiComponenteConContexto from "./hooks/Ejemplo3";
-import Ejemplo4 from "./hooks/Ejemplo4";
-import GreetingStyled from "./components/pure/greetingStyled";
-import Father from "./components/container/father";
+// import Ejemplo1 from "./hooks/Ejemplo1";
+// import Ejemplo2 from "./hooks/Ejemplo2";
+// import MiComponenteConContexto from "./hooks/Ejemplo3";
+// import Ejemplo4 from "./hooks/Ejemplo4";
+// import GreetingStyled from "./components/pure/greetingStyled";
+// import Father from "./components/container/father";
 
 function App() {
   return (
