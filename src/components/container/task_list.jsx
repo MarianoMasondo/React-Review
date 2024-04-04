@@ -25,9 +25,15 @@ const TaskListComponent = () => {
     }
   }, [tasks])
 
-  const changeCompleted = (id) => {
-    console.log("TODO: Cambiar estado de una tarea");
-  };
+  function completeTask(task){
+    console.log('Complete this task:', task)
+    const index = tasks.indexOf(task);
+    const tempTasks = [...tasks];
+    tempTasks[index].completed = !tempTasks[index].completed;
+    //We update the estate of the component with the new list of task and it will ipdate the iteration of the task in order to show the tsk updated.
+    setTasks(tempTasks);
+  }
+
   return (
     <div>
       <div className="col-12">
@@ -49,7 +55,7 @@ const TaskListComponent = () => {
           <tbody>
             {tasks.map((task, index) => {
               return (
-                <TaskComponent key={index} task={task}></TaskComponent>
+                <TaskComponent key={index} task={task} complete={completeTask}></TaskComponent>
               )
             })}
             
