@@ -13,9 +13,7 @@ const Ejemplo1 = () => {
         email: "martin@email.com"
     }
 
-    //Queremos que el VALOR INICIAL y PERSONA INICIAL sean parte del estado del componente para así poder gestionar su cabio y que este se vea reflejado en la vista del componente. Estructura: const[nombreVariable, funcionParaCAmbiar] = useState(valorInicial)
-
-    
+    //Queremos que el VALOR INICIAL y PERSONA INICIAL sean parte del estado del componente para así poder gestionar su cabio y que este se vea reflejado en la vista del componente. Estructura: const[nombreVariable, funcionParaCAmbiar] = useState(valorInicial)    
 
     const [contador, setContador] = useState(valorInicial);
     const [persona, setPersona] = useState(personaInicial);
@@ -35,6 +33,7 @@ const Ejemplo1 = () => {
             }
         )        
     }
+    
     return (
         <div>
             <h1>*** Ejemplo de useState() ***</h1>

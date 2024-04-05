@@ -2,8 +2,7 @@ import React, {useState, useRef, useEffect} from 'react';
 
 const Ejemplo2 = () => {
     //vamos a crear 2 contadores distintos
-    //cada uno enun estado diferente
-    
+    //cada uno en un estado diferente    
     const [contador1, setcontador1] = useState(0);
     const [contador2, setcontador2] = useState(0);
 
@@ -43,7 +42,6 @@ const Ejemplo2 = () => {
         console.log("Mostrando referencia a elemnto DOM");
         console.log(miRef)
     }, [contador1, contador2]);
-
     
     return (
         <div>
