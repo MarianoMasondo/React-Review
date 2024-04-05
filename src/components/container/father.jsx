@@ -10,8 +10,7 @@ const Father = () => {
     }
 
     function updateName(newName){
-        setName(newName)
-        
+        setName(newName)        
     }
 
     return (

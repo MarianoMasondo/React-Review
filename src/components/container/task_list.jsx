@@ -48,7 +48,6 @@ const TaskListComponent = () => {
     const tempTasks = [...tasks];
     tempTasks.push(task);
     setTasks(tempTasks)
-
   }
 
   return (
@@ -74,8 +73,7 @@ const TaskListComponent = () => {
               return (
                 <TaskComponent key={index} task={task} complete={completeTask} remove={deleteTask}></TaskComponent>
               )
-            })}
-            
+            })}            
           </tbody>
         </table>
         </div>
