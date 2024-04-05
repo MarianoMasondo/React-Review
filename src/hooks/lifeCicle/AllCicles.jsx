@@ -18,8 +18,7 @@ const AllCicles = () => {
        
     }, []);
     return (
-        <div>
-            
+        <div>            
         </div>
     );
 }

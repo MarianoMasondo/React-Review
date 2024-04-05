@@ -1,8 +1,6 @@
 // Ejemplo de uso del método componentWillUnmount para componente clase y ejemplo de uso de hooks para componente funcional.
 // (cuando el componente vaa desaparecer)
-
 import React, { Component, useEffect } from 'react';
-
 export class WillUnmount extends Component {
 
     componentWillUnmount(){
