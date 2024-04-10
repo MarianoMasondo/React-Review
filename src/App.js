@@ -2,6 +2,7 @@
 import "./App.css";
 // import GreetingFunctionalComponent from './components/pure/greetingFunctional Component';
 import TaskListComponent from "./components/container/task_list";
+import OptionalRender from "./components/pure/optionalRender";
 // import Ejemplo1 from "./hooks/Ejemplo1";
 // import Ejemplo2 from "./hooks/Ejemplo2";
 // import MiComponenteConContexto from "./hooks/Ejemplo3";
@@ -34,7 +35,10 @@ function App() {
       {/* </header> */}
       {/* Gestión de eventos */}
       {/* <Father></Father> */}
-      <TaskListComponent></TaskListComponent>
+      {/* Ejemplos de renderizado cindicional */}
+      <OptionalRender></OptionalRender>
+      {/* Proyecto final */}
+      {/* <TaskListComponent></TaskListComponent> */}
       
     </div>
   );
