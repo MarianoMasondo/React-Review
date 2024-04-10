@@ -1,17 +1,37 @@
 import React, {useState} from 'react';
 
+let red = 0;
+let green = 200;
+let blue = 150;
+
+// ? Estilo para usuario logueado
+const loggedStyle = {
+    backgroundColor: `rgb(${red}, ${green}, ${blue})`,
+    color: "white",
+    fontWeight: "bold"
+}
+// ? Estilo para usuario no logueado
+const unloggedStyle = {
+    backgroundColor: "tomato",
+    color: "white",
+    fontWeight: "bold"
+}
 //Login / Logout buttons
-const LoginButton = ({loginAction}) => {
+const LoginButton = ({loginAction, propStyle}) => {
     return(
-        <button onClick={loginAction}>Login</button>
+        <button style={loggedStyle} onClick={loginAction}>Login</button>
     )
 }
 
-const LogoutButton = ({logoutAction}) => {
+const LogoutButton = ({logoutAction, propStyle}) => {
     return(
-        <button onClick={logoutAction}>Logout</button>
+        <button style={unloggedStyle} onClick={logoutAction}>Logout</button>
     )
 }
+
+// ? (Expresión true) && expresión => se renderiza la expresión
+// ? (Expresión false) && expresión => no se renderiza la expresión
+
 
 const OptionalRender = () => {
 
@@ -39,9 +59,9 @@ const OptionalRender = () => {
     // }
 
     if(access){
-        optionalButton = <LogoutButton logoutAction={logoutAction}></LogoutButton>
+        optionalButton = <LogoutButton propStyle={unloggedStyle} logoutAction={logoutAction}></LogoutButton>
     }else{
-        optionalButton = <LoginButton loginAction={loginAction}></LoginButton>
+        optionalButton = <LoginButton propStyle={loggedStyle} loginAction={loginAction}></LoginButton>
     }
 
     //unread messages
