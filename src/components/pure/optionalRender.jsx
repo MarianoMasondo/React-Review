@@ -35,7 +35,7 @@ const LogoutButton = ({logoutAction, propStyle}) => {
 
 const OptionalRender = () => {
 
-    const [access, setaccess] = useState(true);
+    const [access, setaccess] = useState(false);
     const [nMessages, setnMessages] = useState(0);
 
     const updateAccess = () => {
@@ -78,8 +78,13 @@ const OptionalRender = () => {
             { nMessages > 1 && <p>You have {nMessages} new messages...</p>}
             { nMessages === 0 && <p>There are no new messasges</p>} */}
             {/* Ternary operator */}
-            { nMessages > 0 ? <p>You have {nMessages} new message{nMessages > 1 ? "s" : null}...</p> : <p>There are no new messages</p>}            
+            {access ? (
+                <div>
+                { nMessages > 0 ? <p>You have {nMessages} new message{nMessages > 1 ? "s" : null}...</p> : <p>There are no new messages</p>}            
             <button onClick={addMessages}>{nMessages === 0 ? "Add your first message" : "Add new message"}</button>
+
+            </div>) : null}
+            
         </div>
     );
 }
