@@ -23,7 +23,6 @@ const LoginButton = ({loginAction, propStyle}) => {
     )
 }
 
-
 const LogoutButton = ({logoutAction, propStyle}) => {
     return(
         <button style={unloggedStyle} onClick={logoutAction}>Logout</button>
